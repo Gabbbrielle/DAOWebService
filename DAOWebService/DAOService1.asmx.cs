@@ -27,9 +27,9 @@ namespace DAOWebService
         public void Create(string nom, int annee, string resultat, string machine, string ip)
         {
             Users u = new Users(nom, annee, resultat, machine, ip);
-            Connections.InsertUser(u);
-            
+            Connections.InsertUser(u);            
         }
+
         [WebMethod]
         public List<Users> ZeUsers()
         {
